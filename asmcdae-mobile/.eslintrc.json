@@ -1,0 +1,21 @@
+{
+  "extends": ["@react-native"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "configFile": "./babel.config.js"
+    }
+  },
+  "env": {
+    "react-native/react-native": true
+  },
+  "plugins": ["react-native"],
+  "rules": {
+    "react-native/no-unused-styles": 0,
+    "react-native/split-platform-components": 0,
+    "react-native/no-inline-styles": 0,
+    "react-native/no-color-literals": 0,
+    "react-native/no-raw-text": 0
+  }
+}
