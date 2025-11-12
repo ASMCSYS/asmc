@@ -1,0 +1,81 @@
+.main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    max-width: 1748px;
+    max-height: 1240px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #4e889c, #93c436);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.profile h2 {
+    background-color: #4e889b;
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.footer {
+    background-color: #eaeaea;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2em;
+}
+
+.profile-details table {
+    width: 70%;
+    margin-left: 10px;
+    border-collapse: collapse;
+}
+
+.profile-details td,
+.profile-details th {
+    border: 2px solid #4e889b;
+    padding: 20px;
+}
+
+.profile-details td:first-child {
+    background-color: #d5e9d8;
+    font-weight: bold;
+}

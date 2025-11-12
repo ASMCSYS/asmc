@@ -1,0 +1,5 @@
+REACT_APP_API_URL=http://localhost:7055
+NODE_ENV=development
+
+# REACT_APP_API_URL=https://api.asmcdae.in
+# NODE_ENV=production
