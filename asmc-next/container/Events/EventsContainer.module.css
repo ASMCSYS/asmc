@@ -1,0 +1,110 @@
+.eventSection {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.imageWrapper {
+    position: relative;
+    display: block;
+    height: 220px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.categoryBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.cardBody {
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.date,
+.time,
+.location,
+.registration {
+    font-size: 0.875rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 12px 0;
+    min-height: 48px;
+}
+
+.cardFooter {
+    padding: 16px;
+    text-align: right;
+    border-top: 1px solid #eee;
+}
+
+.joinButton {
+    background-color: transparent;
+    color: #007bff;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.joinButton:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.noData {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+}

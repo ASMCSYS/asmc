@@ -1,0 +1,45 @@
+import { useState } from "react";
+import Link from "next/link";
+
+export const ActivityCard = ({ data, facility }) => {
+    const [isReadMore, setIsReadMore] = useState(true);
+
+    const toggleReadMore = (e) => {
+        e.preventDefault();
+        setIsReadMore(!isReadMore);
+    };
+
+    const truncateText = (text, length) => {
+        return text.length > length ? text.substring(0, length) + "..." : text;
+    };
+
+    return (
+        <div className="col-sm-10 col-md-6 col-lg-4 col-xxl-3 section__col">
+            <div className="facility--main__card">
+                <div className="facility--main__card-thumb">
+                    <Link href={`/facilities/${facility}/${data?.activity_id}`} >
+                        <img src={data?.thumbnail} alt="Image" onError={(e) => {
+                            e.target.src = 'https://ik.imagekit.io/hl37bqgg7/908513-1712119993746_LlxYgPGS6.jpeg'; // Fallback image
+                        }} />
+                    </Link>
+                </div>
+                <div className="facility--main__card-content">
+                    <h5>
+                        <Link href={`/facilities/${facility}/${data?.activity_id}`}>
+                            {data?.name}
+                        </Link>
+                    </h5>
+                    <p className="secondary-text">
+                        {isReadMore ? truncateText(data?.short_description, 150) : data?.short_description}
+                        <a href="/" className="read-more" onClick={(e) => toggleReadMore(e)}>
+                            {isReadMore ? " Read More" : " Show Less"}
+                        </a>
+                    </p>
+                    <Link href={`/facilities/${facility}/${data?.activity_id}`} className="facility--main__card-content__cta">
+                        View more <i className="asmc-long-right-arrow"></i>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    );
+};
