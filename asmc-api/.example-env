@@ -1,0 +1,24 @@
+PORT=7055
+# MONGO_URI=mongodb://localhost:27017/asmc
+# MONGO_URI=mongodb://localhost:27017/asmc-live-2024-10-17
+MONGO_URI=mongodb://asmcuser:userasmc123@127.0.0.1:27000/asmc?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5
+# MONGO_URI=mongodb://asmcuser:userasmc123@127.0.0.1:27000/asmc?authSource=asmc
+JWT_SECRET=asmc@JWT
+SMTP_USER=info@asmcdae.in
+SMTP_PASS=bCG)rUt7
+FRONTEND_BASE_URL=http://192.168.31.195:3000
+BACKEND_BASE_URL=http://192.168.31.195:7055
+# FRONTEND_BASE_URL=http://localhost:3000
+# BACKEND_BASE_URL=http://localhost:7055
+# BACKEND_BASE_URL=http://192.168.31.195:7055
+IMAGE_KIT_PUBLIC=public_fwM0ujj28bndeoVqtid8VIbTzZI
+IMAGE_KIT_PRIVATE=private_TspHvWrrsWDVJPPGxeWn/5iZIeA=
+
+Merchant_ID=3478065
+Access_Code=ATLU05LH88AS77ULSA
+Working_Key=426B35E599833C642EC81923A1BE27BD
+
+MSG91_AUTH_KEY=429331AjxG9I0Ghr66eceefdP1
+
+BATCH_SIZE=100  # number of emails to send in each batch
+BATCH_DELAY_MINUTES=15  # time delay in minutes between batches
